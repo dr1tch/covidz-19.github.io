@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="./favicon.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="./manifest.json">
+    <title>COVIDZ-19/POSTS-IDEAS</title>
+    <script type="text/javascript" async="" src="http://cdn.heapanalytics.com/js/heap-3523170338.js"></script>
+    <!-- <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script> -->
+    <script async="" src="https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-36759672-9"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link href="css/chunk.css" rel="stylesheet">
+    <link href="css/main.chunk.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="css/chosen.css">
+    <link rel="stylesheet" href="css/jquery-jvectormap-1.2.2.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
+    <link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
+ <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"/>
+   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+   <script src="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js"></script>
+   <link href="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.css" rel="stylesheet" />
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.js"></script> -->
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
+</head>
+
+<body>
+  <div class=" Layout_root__1IJ7B sidebar-left sidebar-show">
+    <div class="Layout_wrap__nyM2J">
+      <nav class="d-print-none navbar Header_root__1vEN4">
+        <div class="Header_searchCollapse__OOurA ml-lg-0 mr-md-3 collapse">
+          <div class="Header_navbarForm__2BalR  input-group">
+            <div class="Header_inputAddon__qgZZH input-group-prepend">
+              <span class="input-group-text"><i class="fa fa-search"></i></span>
+            </div>
+            <input id="search-input-2" placeholder="Search..." type="text"
+              class="input-transparent form-control">
+          </div>
+        </div>
+        <form class="d-md-down-none mr-3 ml-3 form-inline">
+          <div class="form-group">
+            <div class="input-group-no-border input-group">
+              <div class="input-group-prepend"><span class="input-group-text"><i
+                    class="fa fa-search text-white"></i></span></div><input id="search-input" placeholder="Search"
+                type="text" class="input-transparent form-control">
+            </div>
+          </div>
+        </form>
+        <ul class="ml-md-0 nav" style="flex-wrap: unset;">
+          <li id="basic-nav-dropdown" class="Header_notificationsMenu__3JQ5_ dropdown nav-item">
+            <a aria-haspopup="true" href="#" class="nav-link" aria-expanded="false"
+              style="color: rgb(244, 244, 245); padding: 0px;white-space: nowrap;" onclick="toggle_menu('notif')">
+              <span class="Header_avatar__1Oaxz rounded-circle thumb-sm float-left mr-2">
+                <img src="media/a5.jpg" alt="...">
+              </span>
+              <span class="small Header_accountCheck__3L2dG">Philip smith</span>
+              <span class="Header_badge__1pbQ0 badge badge-success">13</span>
+              <span><i class="fa fa-angle-down"></i></span>
+            </a>
+              <!-- <div tabindex="-1" role="menu" aria-hidden="true" class="Header_notificationsWrapper__15oI1 py-0 animated animated-fast fadeInUp dropdown-menu dropdown-menu-right"> -->
+              <section id="notif" class="Header_notificationsWrapper__15oI1 navbar-notifications py-0 animated animated-fast fadeInUp dropdown-menu dropdown-menu-right" style="width: 400px;height: 507px;background-color: rgb(0,0,0,.24);">
+                <header class="Notifications_cardHeader__29pMr card-header">
+                  <div class="text-center mb-sm"><strong>You have 13 notifications</strong></div>
+                  <div role="group" class="Notifications_notificationButtons__VRLWj btn-group">
+                    <button id="ntfs" type="button" class="Notifications_notificationButton__1QxVr btn btn-outline-default btn-sm active">
+                      Notifications
+                    </button>
+                      <button id="msgs" type="button" class="Notifications_notificationButton__1QxVr btn btn-outline-default btn-sm">
+                        Messages
+                      </button>
+                      <button type="button" class="Notifications_notificationButton__1QxVr btn btn-outline-default btn-sm">
+                        Progress
+                      </button>
+                  </div>
+                </header>
+                <ul class="ListGroup_listGroup__k_hWm thin-scroll list-group" style="height: 350px;overflow-y: scroll;">
+                  <li class="ListGroup_listGroupItem__1TUXZ list-group-item"><span
+                      class="ListGroup_notificationIcon__2Ej-n thumb-sm"><img class="rounded-circle" src="media/a3.jpg"
+                        alt="..."></span>
+                    <p class="m-0 overflow-hidden">1 new user just signed up! Check out&nbsp;<a href="#">Monica
+                        Smith</a>'s account.<time class="help-block m-0">2 mins ago</time></p>
+                  </li>
+                  <li class="ListGroup_listGroupItem__1TUXZ list-group-item"><span
+                      class="ListGroup_notificationIcon__2Ej-n thumb-sm"><i
+                        class="glyphicon glyphicon-upload fa-lg"></i></span>
+                    <p class="text-ellipsis m-0">2.1.0-pre-alpha just released.<time class="help-block m-0">5h
+                        ago</time></p>
+                  </li>
+                  <li class="ListGroup_listGroupItem__1TUXZ list-group-item"><span
+                      class="ListGroup_notificationIcon__2Ej-n thumb-sm"><i class="fa fa-bolt fa-lg"></i></span>
+                    <p class="text-ellipsis m-0 overflow-hidden">Server load limited.<time class="help-block m-0">7h
+                        ago</time></p>
+                  </li>
+                  <li class="ListGroup_listGroupItem__1TUXZ list-group-item"><span
+                      class="ListGroup_notificationIcon__2Ej-n thumb-sm"><img class="rounded-circle"
+                        src="media/a5.jpg" alt="..."></span>
+                    <p class="m-0 overflow-hidden">User <a href="#">Jeff</a> registered&nbsp;&nbsp;<button
+                        class="mr-1 btn btn-success btn-xs">Allow</button><button
+                        class="btn btn-danger btn-xs">Deny</button><time class="help-block m-0">12:18 AM</time></p>
+                  </li>
+                  <li class="ListGroup_listGroupItem__1TUXZ list-group-item"><span
+                      class="ListGroup_notificationIcon__2Ej-n thumb-sm"><i class="fa fa-shield fa-lg"></i></span>
+                    <p class="m-0 overflow-hidden">Instructions for changing your Envato Account password. Please check
+                      your account <a href="#">security page</a>.<time class="help-block m-0">12:18 AM</time></p>
+                  </li>
+                  <li class="ListGroup_listGroupItem__1TUXZ list-group-item"><span
+                      class="ListGroup_notificationIcon__2Ej-n thumb-sm"><span class="rounded bg-primary rounded-lg"><i class="fa fa-facebook text-white"></i></span></span>
+                    <p class="text-ellipsis m-0">New <strong>76</strong> facebook likes received.<time class="help-block m-0">15 Apr 2014</time></p>
+                  </li>
+                  <li class="ListGroup_listGroupItem__1TUXZ list-group-item"><span
+                      class="ListGroup_notificationIcon__2Ej-n thumb-sm"><span class="circle circle-lg bg-gray-dark"><i
+                          class="fa fa-circle-o text-white"></i></span></span>
+                    <p class="text-ellipsis m-0">Dark matter detected.<time class="help-block m-0">15 Apr 2014</time>
+                    </p>
+                  </li>
+                </ul>
+                <footer class="Notifications_cardFooter__1K2Ce text-sm card-footer"><button type="button"
+                    id="load-notifications-btn"
+                    class="Notifications_btnNotificationsReload___gS-e btn-xs float-right py-0 btn btn-link"><i
+                      class="la la-refresh"></i></button><span class="fs-mini">Synced at: 21 Apr 2014 18:36</span>
+                </footer>
+              </section>
+            <!-- </div> -->
+          </li>
+          <li class="d-lg-none d-md-block nav-item">
+            <a href="#" class="Header_navItem__2A28M nav-link">
+              <i class="glyphicon glyphicon-search text-white"></i></a></li>
+
+          <li class="dropdown nav-item"><a aria-haspopup="true" href="#"
+              class="text-white nav-link" onclick="toggle_menu('msgs')" aria-expanded="false"><i
+                class="glyphicon glyphicon-comments"></i>
+                <!-- Begin of Msg Notifications Section -->
+                <section id="msgs" class="Header_notificationsWrapper__15oI1 navbar-notifications py-0 animated animated-fast fadeInUp dropdown-menu dropdown-menu-right" style="width: 400px;height: 507px;background-color: rgb(0,0,0,.24);">
+    <header class="Notifications_cardHeader__29pMr card-header">
+        <div class="text-center mb-sm"><strong>You have 13 notifications</strong></div>
+        <div role="group" class="Notifications_notificationButtons__VRLWj btn-group">
+            <button type="button" class="Notifications_notificationButton__1QxVr btn btn-outline-default btn-sm">Notifications</button>
+            <button type="button" class="Notifications_notificationButton__1QxVr btn btn-outline-default btn-sm active">Messages</button>
+            <button type="button" class="Notifications_notificationButton__1QxVr btn btn-outline-default btn-sm">Progress</button>
+        </div>
+    </header>
+    <ul class="ListGroup_listGroup__k_hWm thin-scroll list-group" style="height: 350px;overflow-y: scroll;">
+        <li class="ListGroup_listGroupItem__1TUXZ bg-warning-light list-group-item">
+            <span class="ListGroup_notificationIcon__2Ej-n thumb-sm"><img class="rounded-circle" src="/light-blue-react/static/media/a2.jpg" alt="..." /><i class="status status-bottom bg-success"></i></span>
+            <time class="text-link help float-right">10 sec ago</time>
+            <h6 class="m-0 fw-bold mb-1">Chris Gray</h6>
+            <p class="deemphasize text-ellipsis m-0">Hey! What's up? So many times since we</p>
+        </li>
+        <li class="ListGroup_listGroupItem__1TUXZ list-group-item">
+            <span class="ListGroup_notificationIcon__2Ej-n thumb-sm"><img class="rounded-circle" src="" alt="..." /><i class="status status-bottom bg-danger"></i></span><time class="text-link help float-right">12:56 AM</time>
+            <h6 class="m-0 mb-1">Jaron Fitzroy</h6>
+            <p class="deemphasize text-ellipsis m-0">What about summer break?</p>
+        </li>
+        <li class="ListGroup_listGroupItem__1TUXZ list-group-item">
+            <span class="ListGroup_notificationIcon__2Ej-n thumb-sm"><img class="rounded-circle" src="/light-blue-react/static/media/a4.jpg" alt="..." /><i class="status status-bottom bg-gray-light"></i></span>
+            <time class="text-link help float-right">Yesterday</time>
+            <h6 class="m-0 mb-1">Mike Lewis</h6>
+            <p class="deemphasize text-ellipsis m-0">Just ain't sure about the weekend now. 90% I'll make it.</p>
+        </li>
+        <li class="ListGroup_listGroupItem__1TUXZ list-group-item">
+            <span class="ListGroup_notificationIcon__2Ej-n thumb-sm"><img class="rounded-circle" src="/light-blue-react/static/media/a6.jpg" alt="..." /><i class="status status-bottom bg-success"></i></span>
+            <time class="text-link help float-right">Apr 23</time>
+            <h6 class="m-0 mb-1">Freda Edison</h6>
+            <p class="deemphasize text-ellipsis m-0">Hey what's up? Me and Monica going for a lunch somewhere. Wanna join?</p>
+        </li>
+    </ul>
+    <footer class="Notifications_cardFooter__1K2Ce text-sm card-footer">
+        <button type="button" id="load-notifications-btn" class="Notifications_btnNotificationsReload___gS-e btn-xs float-right py-0 btn btn-link"><i class="la la-refresh"></i></button>
+        <span class="fs-mini">Synced at: 21 Apr 2014 18:36</span>
+    </footer>
+</section>
+
+                <!-- End of  Msg Notifications Section -->
+              </a>
+
+          </li>
+          <li class="Header_divider__1ZQTe text-white nav-item"></li>
+          <li class="dropdown nav-item"><a aria-haspopup="true" href="#"
+              class="Header_navItem__2A28M text-white nav-link" aria-expanded="false"><i
+                class="glyphicon glyphicon-cog"></i></a>
+            <div tabindex="-1" role="menu" aria-hidden="true"
+              class="Header_dropdownMenu__3rPbL Header_settings__10xFn dropdown-menu">
+              <h6>Sidebar on the</h6>
+              <div role="group" class="btn-group-sm btn-group"><button type="button"
+                  class="active btn btn-dark">Left</button><button type="button" class="btn btn-dark">Right</button>
+              </div>
+              <h6 class="mt-2">Sidebar</h6>
+              <div role="group" class="btn-group-sm btn-group"><button type="button"
+                  class="active btn btn-dark">Show</button><button type="button" class="btn btn-dark">Hide</button>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown nav-item"><a aria-haspopup="true" href="#"
+              class="Header_navItem__2A28M text-white nav-link" aria-expanded="false"><i
+                class="glyphicon glyphicon-globe"></i><span class="Header_count__11xJT">8</span></a>
+            <div tabindex="-1" role="menu" aria-hidden="true"
+              class="Header_dropdownMenu__3rPbL Header_support__2zxtd dropdown-menu dropdown-menu-right"><button
+                type="button" tabindex="0" role="menuitem" class="dropdown-item"><span class="badge badge-danger"><i
+                    class="fa fa-bell-o"></i></span>
+                <div class="Header_details__2WoW9">Check out this awesome ticket</div>
+              </button><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><span
+                  class="badge badge-warning"><i class="fa fa-question-circle"></i></span>
+                <div class="Header_details__2WoW9">What is the best way to get ...</div>
+              </button><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><span
+                  class="badge badge-success"><i class="fa fa-info-circle"></i></span>
+                <div class="Header_details__2WoW9">This is just a simple notification</div>
+              </button><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><span
+                  class="badge badge-info"><i class="fa fa-plus"></i></span>
+                <div class="Header_details__2WoW9">12 new orders has arrived today</div>
+              </button><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><span
+                  class="badge badge-danger"><i class="fa fa-tag"></i></span>
+                <div class="Header_details__2WoW9">One more thing that just happened</div>
+              </button><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><a href="#"
+                  class="text-white">See all tickets <i class="fa fa-arrow-right"></i></a></button></div>
+          </li>
+          <li class="nav-item"><a href="#" class="Header_navItem__2A28M text-white nav-link"><i
+                class="glyphicon glyphicon-off"></i></a></li>
+          <li class="d-md-none nav-item"><a href="#" class="Header_navItem__2A28M text-white nav-link"><i
+                class="fa fa-bars"></i></a></li>
+        </ul>
+      </nav>
+      <nav id="sidebar" class="Sidebar_root__nLQag">
+          <header class="Sidebar_logo__NS-Yu">
+              <a class="fw-bold" href="https://demo.flatlogic.com/light-blue-react/">COVIDZ-19</a>
+          </header>
+          <ul class="Sidebar_nav__188x7">
+              <li class="nav-item sb-nav-item">
+                <a href="#" class="Header_navItem__2A28M text-white nav-link"><span class="LinksGroup_icon__1ZUU1 m-r">
+                    <img class="rounded" src="media/analytics.svg" alt="">
+                  </span>Dashboard
+                </a>
+              </li>
+              <li class="nav-item sb-nav-item">
+                <a href="#" class="Header_navItem__2A28M text-white nav-link">
+                  <span class="LinksGroup_icon__1ZUU1 ">
+                    <img class="rounded" src="media/hashtag.svg" alt="">
+                  </span>Explore
+                </a>
+              </li>
+              <li class="nav-item sb-nav-item">
+                <a href="#" class="Header_navItem__2A28M text-white nav-link">
+                  <span class="LinksGroup_icon__1ZUU1 m-r">
+                   <img class="rounded" src="media/bell.svg" alt="">
+                  </span>Notifications<span class="Header_badge__1pbQ0 badge badge-success">13</span>
+                </a>
+              </li>
+              <li class="nav-item sb-nav-item">
+                <a href="#" class="Header_navItem__2A28M text-white nav-link">
+                  <span class="LinksGroup_icon__1ZUU1 m-r">
+                    <img class="rounded" src="media/email.svg" alt="">
+                  </span>Messages<span class="Header_badge__1pbQ0 badge badge-success">13</span>
+                </a>
+              </li>
+              <li class="nav-item sb-nav-item">
+                <a href="#" class="Header_navItem__2A28M text-white nav-link active-sidebar-item ">
+                  <span class="LinksGroup_icon__1ZUU1 m-r">
+                    <img class="rounded" src="media/ideas.svg" alt="">
+                  </span>Ideas
+                </a>
+              </li>
+              <!-- /home/dritch/Downloads/idea (4).svg
+/home/dritch/Downloads/lightbulb.svg
+/home/dritch/Downloads/cancel.svg -->
+              <li class="nav-item sb-nav-item">
+                <a href="#" class="Header_navItem__2A28M text-white nav-link">
+                  <span class="LinksGroup_icon__1ZUU1">
+                    <img class="rounded" src="media/web.svg" alt="">
+                  </span>Publications
+                </a>
+              </li>
+              <li class="nav-item sb-nav-item">
+                <a href="#" class="Header_navItem__2A28M text-white nav-link">
+                  <span class="LinksGroup_icon__1ZUU1 m-r">
+                    <img class="rounded" src="media/attention.svg" alt="">
+                  </span>Signalements
+                </a>
+              </li>
+              <!-- <li class="nav-item">
+                 <button class="btn-link" style="font-size: .9em; text-decoration: none;"><span class="thumb avatar pull-left mr-sm" style="width: 60px;">
+                    <i class="fa fa-ellipsis-h"></i>
+                  </span></button>
+              </li> -->
+               <li class="nav-item">
+                  <div class="Header_navItem__2A28M text-white nav-link">
+                      <button id="inspire" class="btn-rounded-f width-100 mb-xs mr-xs btn btn-success" type="button" style="font-weight: 700; width: 100%; margin-top: 25%;" data-toggle="modal" data-target="#staticBackdrop">Inspirer</button>
+                      <!-- Modal -->
+              </li>
+
+              <li id="trigger-profile" class="nav-item" style="margin-top: 15%;">
+                <a href="#" onclick="toggle_menu('plus')" class="Header_navItem__2A28M text-white nav-link d-flex" style="background: rgba(0, 0, 0, 0.24);box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.1), 0 0 15px rgba(0, 0, 0, 0.06); border-radius: 2.5rem;
+padding: 0.5em 0.5em;">
+
+                  <span class="thumb avatar pull-left mr-sm" style="width: 60px;">
+                    <img class="rounded-circle" src="media/a1.jpg" alt="...">
+                  </span>
+                  <h5 class="Timeline_eventHeading__2dRKf">
+                    <button class="btn-link" style="font-size: .9em; text-decoration: none;">Jessica Smith</button>
+                    <small> @jess</small>
+                  </h5>
+                  <span style="padding-top: 9px;"><i class="fa fa-angle-down"></i></span>
+               </a>
+
+              </li>
+                <section id="plus" class="Notifications_notifications__3vjIV navbar-notifications" style="display: none;">
+                              <header class="Notifications_cardHeader__29pMr card-header">
+                                <div class=" mb-sm ">
+                                  <strong>People to follow</strong>
+                                </div>
+
+                              </header>
+                              <ul class="ListGroup_listGroup__k_hWm thin-scroll list-group">
+                                <a href="#" class="Header_navItem__2A28M text-white nav-link" style="padding: 0;">
+                                  <li class="ListGroup_listGroupItem__1TUXZ list-group-item friends-box">
+
+
+                                      <div class="row" style="margin: auto;">
+
+                                        <div class="col-2" style="padding-left: 8px;
+padding-right: 5px;"><span class="thumb avatar mr-sm">
+                                        <img class="rounded-circle" src="media/a1.jpg" alt="...">
+                                      </span>
+                                    </div>
+                                        <div class="col-4" style="margin-left: -8px;">
+                                          <h5 class="Timeline_eventHeading__2dRKf" style="padding-left:-10px;">
+                                        <button class="btn-link btn-lg" style="width: max-content;">Jessica Smith</button>
+                                         <p class="fs-sm text-muted">@jess</p>
+                                      </h5>
+                                        </div>
+                                        <div class="col-6" style="padding-right: 0;">
+                                          <button class="pull-right mb-xs mr-xs width-100 btn btn-outline-success" style="border-radius: 2.5em;">Follow</button></div>
+                                      </div>
+
+
+
+
+                                  </li>
+                                    </a>
+                                     <a href="#" class="Header_navItem__2A28M text-white nav-link" style="padding: 0;">
+                                  <li class="ListGroup_listGroupItem__1TUXZ list-group-item friends-box">
+
+
+                                      <div class="row" style="margin: auto;">
+
+                                        <div class="col-2" style="padding-left: 8px;
+padding-right: 5px;"><span class="thumb avatar mr-sm">
+                                        <img class="rounded-circle" src="media/a1.jpg" alt="...">
+                                      </span>
+                                    </div>
+                                        <div class="col-4" style="margin-left: -8px;">
+                                          <h5 class="Timeline_eventHeading__2dRKf" style="padding-left:-10px;">
+                                        <button class="btn-link btn-lg" style="width: max-content;">Jessica Smith</button>
+                                         <p class="fs-sm text-muted">@jess</p>
+                                      </h5>
+                                        </div>
+                                        <div class="col-6" style="padding-right: 0;">
+                                          <button class="pull-right mb-xs mr-xs width-100 btn btn-outline-success" style="border-radius: 2.5em;">Follow</button></div>
+                                      </div>
+
+
+
+
+                                  </li>
+                                    </a>
+
+                              </ul>
+                              <footer class="Notifications_cardFooter__1K2Ce text-sm card-footer">
+                                  <button type="button" id="load-notifications-btn" class="Notifications_btnNotificationsReload___gS-e btn  py-0 btn btn-outline-success" style="border:none;color: #58D777;">Show more</button></footer>
+                              <!-- <footer class="Notifications_cardFooter__1K2Ce text-sm card-footer">
+                                  <button type="button" id="load-notifications-btn" class="Notifications_btnNotificationsReload___gS-e btn-xs float-right py-0 btn btn-link"></button><span class="fs-mini">Synced at: 21 Apr 2014 18:36</span></footer> -->
+                          </section>
+              <!-- <li class="nav-item">
+                  <div class="Header_navItem__2A28M text-white nav-link">
+                      <button id="inspire" class="btn-rounded-f width-100 mb-xs mr-xs btn btn-success" type="button" style="font-weight: 700; width: 100%; margin-top: 25%;" data-toggle="modal" data-target="#staticBackdrop">Inspirer</button>
+
+              </li> -->
+                <!-- Modal -->
+      </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+<main class="Layout_content__2g1bY" style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+
+<section class="widget Widget_widget__ieD7J bg-transparent">
+<div id="map" style="width: 600px; height:600px;"></div>
+</section>
+
+
+
+
+
+  </main>
+
+      </div>
+  </div>
+
+
+<script type="text/javascript">
+function toggle_menu(e) {
+     var d = document.getElementById(e);
+
+     if(d.style.display == 'none') {
+       d.style.display = 'block';
+     } else {
+       d.style.display = 'none';
+     }
+  }
+  // let mymap = L.map('mapid').setView(2.109375,28.304380682962783], 13);
+  mapboxgl.accessToken = 'pk.eyJ1IjoidXNzdWYiLCJhIjoiY2s5eWpwMGRwMHE0cTNpbzh4Z2ZvcmJueCJ9.WtrOk7uZ-nHtMq5WmaNItA';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/dark-v10',
+        zoom: 4,
+        center: [
+          2.63671875,
+          29.22889003019423
+        ]
+    });
+
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.js"></script>
+</body>
+
+</html>
